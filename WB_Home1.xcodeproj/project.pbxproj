@@ -11,6 +11,13 @@
 		8C2F4AA82C14BC7500E0DD0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */; };
 		8C2F4AAA2C14BC7700E0DD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */; };
 		8C2F4AAD2C14BC7700E0DD0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F4AAC2C14BC7700E0DD0A /* Preview Assets.xcassets */; };
+		8C2F4ABA2C15F32900E0DD0A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AB92C15F32900E0DD0A /* TabBar.swift */; };
+		8C2F4ABD2C16037800E0DD0A /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4ABC2C16037800E0DD0A /* Contacts.swift */; };
+		8C2F4ABF2C16038000E0DD0A /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4ABE2C16038000E0DD0A /* Chats.swift */; };
+		8C2F4AC12C16038800E0DD0A /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AC02C16038800E0DD0A /* Other.swift */; };
+		8C2F4AC32C16064200E0DD0A /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AC22C16064200E0DD0A /* TabBarItem.swift */; };
+		8C2F4AC52C16504300E0DD0A /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AC42C16504300E0DD0A /* CustomNavBar.swift */; };
+		8C2F4AC72C165B8400E0DD0A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AC62C165B8400E0DD0A /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C2F4AAC2C14BC7700E0DD0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C2F4AB92C15F32900E0DD0A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		8C2F4ABC2C16037800E0DD0A /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		8C2F4ABE2C16038000E0DD0A /* Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
+		8C2F4AC02C16038800E0DD0A /* Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		8C2F4AC22C16064200E0DD0A /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		8C2F4AC42C16504300E0DD0A /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
+		8C2F4AC62C165B8400E0DD0A /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +65,15 @@
 		8C2F4AA42C14BC7500E0DD0A /* WB_Home1 */ = {
 			isa = PBXGroup;
 			children = (
+				8C2F4ABB2C16034600E0DD0A /* TabViews */,
 				8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */,
+				8C2F4AC42C16504300E0DD0A /* CustomNavBar.swift */,
 				8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */,
+				8C2F4AB92C15F32900E0DD0A /* TabBar.swift */,
+				8C2F4AC22C16064200E0DD0A /* TabBarItem.swift */,
 				8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */,
 				8C2F4AAB2C14BC7700E0DD0A /* Preview Content */,
+				8C2F4AC62C165B8400E0DD0A /* Contact.swift */,
 			);
 			path = WB_Home1;
 			sourceTree = "<group>";
@@ -65,6 +84,16 @@
 				8C2F4AAC2C14BC7700E0DD0A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8C2F4ABB2C16034600E0DD0A /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				8C2F4ABC2C16037800E0DD0A /* Contacts.swift */,
+				8C2F4ABE2C16038000E0DD0A /* Chats.swift */,
+				8C2F4AC02C16038800E0DD0A /* Other.swift */,
+			);
+			path = TabViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2F4AC72C165B8400E0DD0A /* Contact.swift in Sources */,
 				8C2F4AA82C14BC7500E0DD0A /* ContentView.swift in Sources */,
 				8C2F4AA62C14BC7500E0DD0A /* WB_Home1App.swift in Sources */,
+				8C2F4AC52C16504300E0DD0A /* CustomNavBar.swift in Sources */,
+				8C2F4ABA2C15F32900E0DD0A /* TabBar.swift in Sources */,
+				8C2F4ABD2C16037800E0DD0A /* Contacts.swift in Sources */,
+				8C2F4AC32C16064200E0DD0A /* TabBarItem.swift in Sources */,
+				8C2F4AC12C16038800E0DD0A /* Other.swift in Sources */,
+				8C2F4ABF2C16038000E0DD0A /* Chats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +346,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
