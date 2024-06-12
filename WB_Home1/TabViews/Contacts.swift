@@ -16,29 +16,59 @@ struct Contacts: View {
         Contact(name: "Иван Иванов", lastSeen: "Online", avatar: "IvanIvanov"),
         Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", avatar: "LisaAlisa")
     ]
+    @State var path = [Contact]()
     var body: some View {
-        NavigationView {
+        NavigationStack(path: $path) {
             VStack {
-                CustomNavBar()
-                Spacer()
-                List(contacts) { contact in
-                    HStack() {
-                        Image(contact.avatar)
-                                        .frame(width: 56, height: 56)
-                        VStack {
-                            Text(contact.name)
-                                .font(.custom("SemiBold", size: 14))
-                                .foregroundColor(Color(red: 41/255, green: 24/255, blue: 59/255))
-                            Text(contact.lastSeen)
-                                .font(.custom("Regular", size: 12))
-                                .foregroundColor(Color(red: 173/255, green: 181/255, blue: 189/255))
+                SearchBar()
+                    .padding(16)
+                List(contacts, id: \.self) { contact in
+                    NavigationLink(destination: DetailsView(info: contact)) {
+                        HStack() {
+                            Image(contact.avatar)
+                                .frame(width: 56, height: 56)
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(contact.name)
+                                    .font(.custom("SemiBold", size: 14))
+                                    .foregroundColor(Color(red: 41/255, green: 24/255, blue: 59/255))
+                                Text(contact.lastSeen)
+                                    .font(.custom("Regular", size: 12))
+                                    .foregroundColor(Color(red: 173/255, green: 181/255, blue: 189/255))
+                            }
+                            
                         }
                     }
                 }
             }
+            .padding(16)
+            .listStyle(.inset)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text("Контакты")
+                        .foregroundColor(Color(red: 41/255, green: 24/255, blue: 59/255))
+                        .font(.custom("SF Pro Display", size: 18))
+                        .padding(.horizontal)
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        
+                    },
+                           label: {
+                        Image(systemName: "plus")
+                            .frame(width: 24, height: 24)
+                            .foregroundColor(Color(red: 41/255, green: 24/255, blue: 59/255))
+                            .padding(.horizontal)
+                    })
+                }
+            }
         }
+        
+        
     }
+    
 }
+
+
 
 #Preview {
     Contacts()
