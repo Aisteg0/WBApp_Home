@@ -22,8 +22,10 @@ struct Contacts: View {
             VStack {
                 SearchBar()
                     .padding(16)
-                List(contacts, id: \.self) { contact in
-                    NavigationLink(destination: DetailsView(info: contact)) {
+                List(contacts) { contact in
+                    Button(action: {
+                        self.path.append(contact)
+                    }) {
                         HStack() {
                             Image(contact.avatar)
                                 .frame(width: 56, height: 56)
@@ -35,9 +37,12 @@ struct Contacts: View {
                                     .font(.custom("Regular", size: 12))
                                     .foregroundColor(Color(red: 173/255, green: 181/255, blue: 189/255))
                             }
-                            
                         }
                     }
+                }
+                .navigationDestination(for: Contact.self) { contact in
+                    DetailsView(info: contact)
+                        .buttonStyle(PlainButtonStyle())
                 }
             }
             .padding(16)
@@ -62,12 +67,8 @@ struct Contacts: View {
                 }
             }
         }
-        
-        
     }
-    
 }
-
 
 
 #Preview {

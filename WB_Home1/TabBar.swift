@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TabBar: View {
-    @State private var selectedTab = 0
     var body: some View {
         VStack {
             TabView {
@@ -25,7 +24,6 @@ struct TabBar: View {
                         Image(systemName: "ellipsis")
                     }
             }
-            
         }
     }
 }

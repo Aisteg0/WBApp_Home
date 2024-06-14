@@ -15,7 +15,6 @@
 		8C2F4ABD2C16037800E0DD0A /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4ABC2C16037800E0DD0A /* Contacts.swift */; };
 		8C2F4ABF2C16038000E0DD0A /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4ABE2C16038000E0DD0A /* Chats.swift */; };
 		8C2F4AC12C16038800E0DD0A /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AC02C16038800E0DD0A /* Other.swift */; };
-		8C2F4AC32C16064200E0DD0A /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AC22C16064200E0DD0A /* TabBarItem.swift */; };
 		8C2F4AC52C16504300E0DD0A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AC42C16504300E0DD0A /* SearchBar.swift */; };
 		8C2F4AC72C165B8400E0DD0A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AC62C165B8400E0DD0A /* Contact.swift */; };
 		8C2F4ACA2C176D9600E0DD0A /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AC92C176D9600E0DD0A /* DetailsView.swift */; };
@@ -31,7 +30,6 @@
 		8C2F4ABC2C16037800E0DD0A /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		8C2F4ABE2C16038000E0DD0A /* Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
 		8C2F4AC02C16038800E0DD0A /* Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
-		8C2F4AC22C16064200E0DD0A /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		8C2F4AC42C16504300E0DD0A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		8C2F4AC62C165B8400E0DD0A /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		8C2F4AC92C176D9600E0DD0A /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				8C2F4AC42C16504300E0DD0A /* SearchBar.swift */,
 				8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */,
 				8C2F4AB92C15F32900E0DD0A /* TabBar.swift */,
-				8C2F4AC22C16064200E0DD0A /* TabBarItem.swift */,
 				8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */,
 				8C2F4AAB2C14BC7700E0DD0A /* Preview Content */,
 				8C2F4AC62C165B8400E0DD0A /* Contact.swift */,
@@ -184,7 +181,6 @@
 				8C2F4AC52C16504300E0DD0A /* SearchBar.swift in Sources */,
 				8C2F4ABA2C15F32900E0DD0A /* TabBar.swift in Sources */,
 				8C2F4ABD2C16037800E0DD0A /* Contacts.swift in Sources */,
-				8C2F4AC32C16064200E0DD0A /* TabBarItem.swift in Sources */,
 				8C2F4AC12C16038800E0DD0A /* Other.swift in Sources */,
 				8C2F4ABF2C16038000E0DD0A /* Chats.swift in Sources */,
 			);
