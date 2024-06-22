@@ -19,6 +19,7 @@
 		8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C2F4AAC2C14BC7700E0DD0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C2F4B582C26D3B100E0DD0A /* Passport.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Passport.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 			children = (
 				8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */,
 				8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */,
+				8C2F4B582C26D3B100E0DD0A /* Passport.playground */,
 				8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */,
 				8C2F4AAB2C14BC7700E0DD0A /* Preview Content */,
 			);
