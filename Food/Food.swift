@@ -40,22 +40,30 @@ struct SimpleEntry: TimelineEntry {
 struct FoodEntryView : View {
     var entry: Provider.Entry
     var body: some View {
-        VStack {
+        
+            ZStack {
                 Image("Food")
-                    .scaledToFit()
-                    .frame(width: 5, height: 5)
-            Text("\(String(format: "%.0f", entry.calories)) калорий")
-                Button(intent: Intents()) {
-                    Image(systemName: "plus")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 25, height: 25)
-                        .fontWeight(.light)
-                        .padding()
-            }
+                    .resizable()
+//                    .frame(width: 120, height: 120)
+//                    .scaledToFit()
+                VStack {
+                    Text("\(String(format: "%.0f", entry.calories)) калорий")
+                    Button(intent: Intents()) {
+                        Image(systemName: "plus")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 25, height: 25)
+                            .fontWeight(.light)
+                            .padding()
+                    }
+                }
+                
+            
             // TODO: Сделать кнопку для обновления
         }
+            
     }
+    
 }
 
 struct Food: Widget {
