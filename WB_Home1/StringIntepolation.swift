@@ -38,12 +38,14 @@ struct StringIntepolation: View {
         List() {
             ForEach(makeDateString(selectedDay), id: \.self) { dateString in
                 Text(dateString)
+                    .font(dateString.contains("Today") ? .headline : .subheadline)
             }
         }
         Spacer()
     }
     
     private func makeDateString(_ date: Date) -> [String] {
+        var days = ["Pozayesterday", "Yesterday", "Today", "Tommorow", "PosleTommorow"]
         let calendar = Calendar(identifier: .gregorian)
         let components = calendar.dateComponents([.year, .month, .day], from: selectedDay)
         let date = [
@@ -53,29 +55,27 @@ struct StringIntepolation: View {
             calendar.date(byAdding: .day, value: 1, to: date),
             calendar.date(byAdding: .day, value: 2, to: date)
         ]
-        let dateString = date.map {
-            "\(dateFormat: $0 ?? Date(), locale: locale[getIndex()], using: .full)"
+        return days.enumerated().map { index, offset in
+            return "\(days[index]):  \(spellOut: date[index] ?? Date(), locale: locale[getIndex()])"
         }
-        return dateString
     }
     
     private func getIndex() -> Int {
-            switch selectEmoji {
-            case "🇷🇺":
-                return 0
-            case "🇬🇧":
-                return 1
-            case "🇫🇷":
-                return 2
-            case "🇩🇪":
-                return 3
-            case "🇮🇹":
-                return 4
-            default:
-                return 0
-            }
+        switch selectEmoji {
+        case "🇷🇺":
+            return 0
+        case "🇬🇧":
+            return 1
+        case "🇫🇷":
+            return 2
+        case "🇩🇪":
+            return 3
+        case "🇮🇹":
+            return 4
+        default:
+            return 0
         }
-
+    }
 }
 
 
