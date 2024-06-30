@@ -64,7 +64,6 @@
 				8C2F4AB32C14BED900E0DD0A /* Onboarding.swift */,
 				8C2F4AB52C14BF0000E0DD0A /* NextPage.swift */,
 				8C8912EB2C3191FA00DB9B1B /* Localizable */,
-				8C8912DD2C30B2A700DB9B1B /* Locale */,
 				8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */,
 				8C2F4AAB2C14BC7700E0DD0A /* Preview Content */,
 			);
@@ -77,13 +76,6 @@
 				8C2F4AAC2C14BC7700E0DD0A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		8C8912DD2C30B2A700DB9B1B /* Locale */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Locale;
 			sourceTree = "<group>";
 		};
 		8C8912EB2C3191FA00DB9B1B /* Localizable */ = {
