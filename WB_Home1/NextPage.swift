@@ -10,7 +10,7 @@ import SwiftUI
 struct NextPage: View {
     @Binding var showModel: Bool
     var body: some View {
-        Button("Dissmis", role: .cancel) {
+        Button("dissmis", role: .cancel) {
             showModel = false
         }
     }
