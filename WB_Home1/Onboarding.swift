@@ -15,7 +15,7 @@ struct Onboarding: View {
                 .frame(width: Constants.Image.widthForImage, height: Constants.Image.heightForImage)
                 .padding(.top, Constants.Padding.paddingForImage)
 
-            Text("Общайтесь с друзьями и близкими легко")
+            Text("preview")
                 .fontWeight(.bold)
                 .font(.system(size: Constants.Size.size24, weight: .bold))
                 .multilineTextAlignment(.center)
@@ -24,13 +24,13 @@ struct Onboarding: View {
             Button {
                 
             } label: {
-                Text("Пользовательское соглашение")
+                Text("terms")
             }
             .frame(width: Constants.wight, height: Constants.Size.size24)
             .buttonStyle(.plain)
             .font(.custom("SF Pro Display", size: Constants.Size.size14))
             .padding(.top, Constants.Padding.paddingForButtonAgree)
-            Button("Начать общаться", action:  {
+            Button("begin", action:  {
                 showModel = true
             })
             .frame(width: Constants.ButtonNext.wight, height: Constants.ButtonNext.height)
