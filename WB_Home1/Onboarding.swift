@@ -38,7 +38,6 @@ struct Onboarding: View {
             .cornerRadius(Constants.radius)
             .foregroundColor(.white)
             .padding(.top, Constants.Padding.paddingForButtonNext)
-            
             .sheet(isPresented: $showModel) {
                 NextPage(showModel: $showModel)
             }
