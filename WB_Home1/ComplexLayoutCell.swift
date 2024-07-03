@@ -8,43 +8,85 @@
 import SwiftUI
 
 struct ComplexLayoutCell: View {
+    var position: Position
+    
     var body: some View {
         ZStack {
-            HStack {
-                VStack() {
-                    RoundedRectangle(cornerRadius: 45)
-                        .strokeBorder(style: StrokeStyle(lineWidth: 2, dash: [20,10]))
-                        .frame(width: 200, height: 100)
-                    RoundedRectangle(cornerRadius: 45)
-                        .strokeBorder(style: StrokeStyle(lineWidth: 2, dash: [20,10]))
-                        .frame(width: 200, height: 100)
-                }
-                .offset(x: 30)
-                RoundedRectangle(cornerRadius: 35)
-                    .strokeBorder(style: StrokeStyle(lineWidth: 2, dash: [20,10]))
-                    .frame(width: 215, height: 100)
-                    .rotationEffect(.degrees(90))
+            switch position {
+            case .first:
+                firstPosition
+            case .second:
+                secondPosition
+            case .third:
+                thirdPosition
+            case .fours:
+                foursPosition
             }
         }
     }
     
-    private func first() {
-        
+    private var Rectangle: some View {
+        RoundedRectangle(cornerRadius: 45)
+            .strokeBorder(style: StrokeStyle(lineWidth: 2, dash: [20,10]))
     }
     
-    private func second() {
-        
+    private var firstPosition: some View {
+        HStack {
+            VStack {
+                Rectangle
+                    .frame(width: 150, height: 150)
+                Rectangle
+                    .frame(width: 150, height: 150)
+            }
+            Rectangle
+                .frame(width: 150, height: 300)
+        }
     }
     
-    private func third() {
-        
+    private var secondPosition: some View {
+        HStack {
+            Rectangle
+                .frame(width: 150, height: 300)
+            VStack {
+                Rectangle
+                    .frame(width: 150, height: 150)
+                Rectangle
+                    .frame(width: 150, height: 150)
+            }
+        }
     }
     
-    private func fours() {
-        
+    private var thirdPosition: some View {
+        VStack {
+            Rectangle
+                .frame(width: 150, height: 300)
+                .rotationEffect(.degrees(90))
+            HStack {
+                Rectangle
+                    .frame(width: 150, height: 150)
+                Rectangle
+                    .frame(width: 150, height: 150)
+            }
+            .offset(y: -65)
+        }
+    }
+    
+    private var foursPosition: some View {
+        VStack {
+            HStack {
+                Rectangle
+                    .frame(width: 150, height: 150)
+                Rectangle
+                    .frame(width: 150, height: 150)
+            }
+            .offset(y: 65)
+            Rectangle
+                .frame(width: 150, height: 300)
+                .rotationEffect(.degrees(90))
+        }
     }
 }
 
 #Preview {
-    ComplexLayoutCell()
+    ComplexLayoutCell(position: Position.fours)
 }

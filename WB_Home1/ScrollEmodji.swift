@@ -8,31 +8,30 @@
 import SwiftUI
 
 struct ScrollEmodji: View {
-    
     @State private var emoji = [String]()
-
-        var body: some View {
-            ScrollView(.vertical) {
-                LazyVGrid(columns: [GridItem()]) {
-                    
-                    ForEach(emoji, id: \.self) { emoji in
-                        ZStack {
-                            ComplexLayoutCell()
-                            Text(emoji)
-                                .font(.system(size: 175))
-                                .padding()
-                                .opacity(0.5)
-                        }
+    
+    var body: some View {
+        ScrollView(.vertical) {
+            LazyVGrid(columns: [GridItem()]) {
+                
+                ForEach(emoji, id: \.self) { emoji in
+                    ZStack {
+                        ComplexLayoutCell(position: Position.randomPosition)
+                        Text(emoji)
+                            .font(.system(size: 175))
+                            .padding()
+                            .opacity(0.5)
                     }
                 }
-                    
             }
-            .onAppear() {
-                for _ in 0..<10000 {
-                    emoji.append(getRandomEmoji())
-                }
+            
+        }
+        .onAppear() {
+            for _ in 0..<10000 {
+                emoji.append(getRandomEmoji())
             }
         }
+    }
     private func getRandomEmoji() -> String {
         let range = Emoji.all.randomElement()!
         let randomCodepoint = Int.random(in: range)

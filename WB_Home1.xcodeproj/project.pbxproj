@@ -14,6 +14,7 @@
 		8C8913002C34476D00DB9B1B /* ScrollEmodji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8912FF2C34476D00DB9B1B /* ScrollEmodji.swift */; };
 		8C8913022C3447A100DB9B1B /* ComplexLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8913012C3447A100DB9B1B /* ComplexLayoutCell.swift */; };
 		8C8913042C3449C000DB9B1B /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8913032C3449C000DB9B1B /* Emoji.swift */; };
+		8C8913062C35A60F00DB9B1B /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8913052C35A60F00DB9B1B /* Position.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8C8912FF2C34476D00DB9B1B /* ScrollEmodji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollEmodji.swift; sourceTree = "<group>"; };
 		8C8913012C3447A100DB9B1B /* ComplexLayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexLayoutCell.swift; sourceTree = "<group>"; };
 		8C8913032C3449C000DB9B1B /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		8C8913052C35A60F00DB9B1B /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				8C8912FF2C34476D00DB9B1B /* ScrollEmodji.swift */,
 				8C8913032C3449C000DB9B1B /* Emoji.swift */,
 				8C8913012C3447A100DB9B1B /* ComplexLayoutCell.swift */,
+				8C8913052C35A60F00DB9B1B /* Position.swift */,
 				8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */,
 				8C2F4AAB2C14BC7700E0DD0A /* Preview Content */,
 			);
@@ -148,6 +151,7 @@
 			files = (
 				8C8913022C3447A100DB9B1B /* ComplexLayoutCell.swift in Sources */,
 				8C8913042C3449C000DB9B1B /* Emoji.swift in Sources */,
+				8C8913062C35A60F00DB9B1B /* Position.swift in Sources */,
 				8C8913002C34476D00DB9B1B /* ScrollEmodji.swift in Sources */,
 				8C2F4AA82C14BC7500E0DD0A /* ContentView.swift in Sources */,
 				8C2F4AA62C14BC7500E0DD0A /* WB_Home1App.swift in Sources */,
