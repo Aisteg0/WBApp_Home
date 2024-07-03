@@ -13,18 +13,16 @@ struct ScrollEmodji: View {
     var body: some View {
         ScrollView(.vertical) {
             LazyVGrid(columns: [GridItem()]) {
-                
                 ForEach(emoji, id: \.self) { emoji in
                     ZStack {
                         ComplexLayoutCell(position: Position.randomPosition)
                         Text(emoji)
-                            .font(.system(size: 175))
+                            .font(.system(size: Constants.size))
                             .padding()
-                            .opacity(0.5)
+                            .opacity(Constants.opacite)
                     }
                 }
             }
-            
         }
         .onAppear() {
             for _ in 0..<10000 {
@@ -41,4 +39,9 @@ struct ScrollEmodji: View {
 
 #Preview {
     ScrollEmodji()
+}
+
+private enum Constants {
+    static let size: CGFloat = 175.0
+    static let opacite: CGFloat = 0.5
 }
