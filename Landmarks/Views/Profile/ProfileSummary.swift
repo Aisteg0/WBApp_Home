@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct ProfileSummary: View {
-    @Environment(ModelData.self) var modelData
     var profile: Profile
+    @Environment(ModelData.self) var modelData
     
     var body: some View {
         ScrollView {

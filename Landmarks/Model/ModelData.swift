@@ -8,10 +8,9 @@ Storage for model data.
 import Foundation
 
 @Observable
-class ModelData {
+class ModelData: ObservableObject {
     var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
-
     var features: [Landmark] {
         landmarks.filter { $0.isFeatured }
     }

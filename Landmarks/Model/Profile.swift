@@ -25,5 +25,5 @@ struct Profile {
 }
 
 extension Profile {
-    static let `default` = Profile(username: "aapl")
+    static var `default` = Profile(username: "aapl")
 }
