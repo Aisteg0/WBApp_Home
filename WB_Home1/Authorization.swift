@@ -8,37 +8,33 @@
 import SwiftUI
 
 struct Authorization: View {
-    @State private var phoneNumber = ""
-    @State private var countryCod = ""
+    @State private var isShowingLoading = false
+    
     var body: some View {
-        Text("Введите номер телефона")
-            .font(.title)
-            .bold()
-            .padding(.top, 169)
-        Text("Мы вышлем код подтвержения \n на указанный номер")
-            .multilineTextAlignment(.center)
-            .padding(.top, 8)
-        HStack {
-            TextField("🇷🇺 +7", text: $countryCod)
-                .frame(width: 62, height: 36)
-                .background(Color.Resolved(red: 247/255, green: 247/255, blue: 252/255))
-                .disabled(true)
-            TextField("000 000-00-00", text: $phoneNumber)
-                .keyboardType(.phonePad)
-                .frame(width: 262, height: 36)
-                .background(Color.Resolved(red: 247/255, green: 247/255, blue: 252/255))
+        if !isShowingLoading {
+            TextView()
+        } else {
+            Animation()
         }
-        .padding(.top, 49)
+        EnterNumber()
         Button {
-             
+                isShowingLoading = true
         } label: {
-            Text("Продолжить")
+            Text("next")
         }
-
-        
-            Spacer()
-            
+        .frame(width: Constants.width, height: Constants.height)
+        .background(Color.color2)
+        .cornerRadius(Constants.cornerRadius)
+        .foregroundColor(.white)
+        .padding(.top, Constants.paddingForButton)
     }
+}
+
+private enum Constants {
+    static let width: CGFloat = 327.0
+    static let height: CGFloat = 52.0
+    static let cornerRadius: CGFloat = 45.0
+    static let paddingForButton: CGFloat = 69.0
 }
 
 #Preview {

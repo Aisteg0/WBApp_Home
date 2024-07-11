@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  WB_Home1
+
+  Created by Михаил Ганин on 11.07.2024.
+  
+*/
+
+"next" = "Next";
+"number" = "Enter number";
+"code_confirmation" = "We send code of confirmation \n on your phone";
