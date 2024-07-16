@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C21E9E12C46ADEF00B890B3 /* CodeEnter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C21E9E02C46ADEF00B890B3 /* CodeEnter.swift */; };
+		8C21E9E32C46AEF700B890B3 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C21E9E22C46AEF700B890B3 /* CodeView.swift */; };
+		8C21E9E52C46B33800B890B3 /* StructCode+Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C21E9E42C46B33800B890B3 /* StructCode+Phone.swift */; };
+		8C21E9E72C46C9FB00B890B3 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C21E9E62C46C9FB00B890B3 /* TextView.swift */; };
+		8C21E9EA2C46CBE300B890B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C21E9E82C46CBE300B890B3 /* Localizable.strings */; };
 		8C2F4AA62C14BC7500E0DD0A /* WB_Home1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */; };
 		8C2F4AA82C14BC7500E0DD0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */; };
 		8C2F4AAA2C14BC7700E0DD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */; };
@@ -14,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C21E9E02C46ADEF00B890B3 /* CodeEnter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEnter.swift; sourceTree = "<group>"; };
+		8C21E9E22C46AEF700B890B3 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		8C21E9E42C46B33800B890B3 /* StructCode+Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StructCode+Phone.swift"; sourceTree = "<group>"; };
+		8C21E9E62C46C9FB00B890B3 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		8C21E9E92C46CBE300B890B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8C21E9EB2C46CBED00B890B3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8C2F4AA22C14BC7500E0DD0A /* WB_Home1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB_Home1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_Home1App.swift; sourceTree = "<group>"; };
 		8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +64,11 @@
 			children = (
 				8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */,
 				8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */,
+				8C21E9E62C46C9FB00B890B3 /* TextView.swift */,
+				8C21E9E02C46ADEF00B890B3 /* CodeEnter.swift */,
+				8C21E9E22C46AEF700B890B3 /* CodeView.swift */,
+				8C21E9E42C46B33800B890B3 /* StructCode+Phone.swift */,
+				8C21E9E82C46CBE300B890B3 /* Localizable.strings */,
 				8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */,
 				8C2F4AAB2C14BC7700E0DD0A /* Preview Content */,
 			);
@@ -109,6 +125,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 8C2F4A992C14BC7500E0DD0A;
 			productRefGroup = 8C2F4AA32C14BC7500E0DD0A /* Products */;
@@ -126,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C2F4AAD2C14BC7700E0DD0A /* Preview Assets.xcassets in Resources */,
+				8C21E9EA2C46CBE300B890B3 /* Localizable.strings in Resources */,
 				8C2F4AAA2C14BC7700E0DD0A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,12 +155,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C21E9E52C46B33800B890B3 /* StructCode+Phone.swift in Sources */,
 				8C2F4AA82C14BC7500E0DD0A /* ContentView.swift in Sources */,
 				8C2F4AA62C14BC7500E0DD0A /* WB_Home1App.swift in Sources */,
+				8C21E9E72C46C9FB00B890B3 /* TextView.swift in Sources */,
+				8C21E9E12C46ADEF00B890B3 /* CodeEnter.swift in Sources */,
+				8C21E9E32C46AEF700B890B3 /* CodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C21E9E82C46CBE300B890B3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C21E9E92C46CBE300B890B3 /* en */,
+				8C21E9EB2C46CBED00B890B3 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8C2F4AAE2C14BC7700E0DD0A /* Debug */ = {
