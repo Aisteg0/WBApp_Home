@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  WB_Home1
+
+  Created by Михаил Ганин on 16.07.2024.
+  
+*/
+
+"cod" = "Enter code";
+"sendCod" = "Send code on phone \n 777777777";
+"yourCod" = "Your code";
+"codAgain" = "Send code again";
