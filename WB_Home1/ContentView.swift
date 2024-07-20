@@ -7,17 +7,38 @@
 
 import SwiftUI
 
+// MARK: Dependency Injection
+
 struct ContentView: View {
+    @ObservedObject var viewModel: ItemListViewModel
+    
+    @State private var newItem: String = ""
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+            TextField("Введите новый элемент", text: $newItem)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            Button("Добавить") {
+                DataManager.shared.addItem(newItem)
+                newItem = ""
+            }
+            .padding()
+            
+            List {
+                ForEach(viewModel.items.indices, id: \.self) { index in
+                    Text(viewModel.items[index])
+                        .onTapGesture {
+                            DataManager.shared.removeItem(at: index)
+                        }
+                }
+            }
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(viewModel: ItemListViewModel(dataManager: DataManager.shared))
 }
