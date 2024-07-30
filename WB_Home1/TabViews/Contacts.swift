@@ -28,6 +28,7 @@ struct Contacts: View {
                     }) {
                         HStack() {
                             LoadImage(avatar: contact.avatar)
+                                .frame(width: 56, height: 56)
                             VStack(alignment: .leading, spacing: 2) {
                                 Text(contact.name)
                                     .font(.custom("SemiBold", size: 14))

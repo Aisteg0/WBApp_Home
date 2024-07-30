@@ -28,7 +28,6 @@ struct LoadImage: View {
             if let image = loader.image {
                 image
                     .resizable()
-                    .frame(width: 56, height: 56)
             } else {
                 Color.gray.opacity(0.2)
                     .onAppear {
