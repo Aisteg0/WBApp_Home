@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C28CC452C591024007F255F /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28CC442C591024007F255F /* LoadImage.swift */; };
 		8C2F4AA62C14BC7500E0DD0A /* WB_Home1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */; };
 		8C2F4AA82C14BC7500E0DD0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */; };
 		8C2F4AAA2C14BC7700E0DD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C28CC442C591024007F255F /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
 		8C2F4AA22C14BC7500E0DD0A /* WB_Home1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB_Home1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_Home1App.swift; sourceTree = "<group>"; };
 		8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C28CC432C591014007F255F /* LoadImage */ = {
+			isa = PBXGroup;
+			children = (
+				8C28CC442C591024007F255F /* LoadImage.swift */,
+			);
+			path = LoadImage;
+			sourceTree = "<group>";
+		};
 		8C2F4A992C14BC7500E0DD0A = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 			children = (
 				8C2F4AC82C176D8200E0DD0A /* DetailViews */,
 				8C2F4ABC2C16037800E0DD0A /* Contacts.swift */,
+				8C28CC432C591014007F255F /* LoadImage */,
 				8C2F4ABE2C16038000E0DD0A /* Chats.swift */,
 				8C2F4AC02C16038800E0DD0A /* Other.swift */,
 			);
@@ -175,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C2F4AC72C165B8400E0DD0A /* Contact.swift in Sources */,
+				8C28CC452C591024007F255F /* LoadImage.swift in Sources */,
 				8C2F4ACA2C176D9600E0DD0A /* DetailsView.swift in Sources */,
 				8C2F4AA82C14BC7500E0DD0A /* ContentView.swift in Sources */,
 				8C2F4AA62C14BC7500E0DD0A /* WB_Home1App.swift in Sources */,
