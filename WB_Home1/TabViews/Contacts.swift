@@ -17,7 +17,6 @@ struct Contacts: View {
         Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", avatar: "LisaAlisa")
     ]
     @State var path = [Contact]()
-    @StateObject var loader = LoadImage()
     var body: some View {
         NavigationStack(path: $path) {
             VStack {
@@ -28,9 +27,7 @@ struct Contacts: View {
                         self.path.append(contact)
                     }) {
                         HStack() {
-                            
-                            //                            Image(contact.avatar)
-                            //                                .frame(width: 56, height: 56)
+                            LoadImage(avatar: contact.avatar)
                             VStack(alignment: .leading, spacing: 2) {
                                 Text(contact.name)
                                     .font(.custom("SemiBold", size: 14))

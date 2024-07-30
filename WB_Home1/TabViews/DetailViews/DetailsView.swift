@@ -12,8 +12,7 @@ struct DetailsView: View {
     let info: Contact
     var body: some View {
         VStack() {
-            Image(info.avatar)
-                .resizable()
+            LoadImage(avatar: info.avatar)
                 .frame(width: 200, height: 200)
                 .padding(.top, 136)
             Text(info.name)
