@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C28CC472C5C1893007F255F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28CC462C5C1893007F255F /* Server.swift */; };
+		8C28CC492C5C18AC007F255F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28CC482C5C18AC007F255F /* Client.swift */; };
+		8C28CC4F2C5C1BE1007F255F /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28CC4E2C5C1BE1007F255F /* System.swift */; };
 		8C2F4AA62C14BC7500E0DD0A /* WB_Home1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */; };
 		8C2F4AA82C14BC7500E0DD0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */; };
 		8C2F4AAA2C14BC7700E0DD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C28CC462C5C1893007F255F /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		8C28CC482C5C18AC007F255F /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		8C28CC4E2C5C1BE1007F255F /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		8C2F4AA22C14BC7500E0DD0A /* WB_Home1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB_Home1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_Home1App.swift; sourceTree = "<group>"; };
 		8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,9 @@
 			children = (
 				8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */,
 				8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */,
+				8C28CC462C5C1893007F255F /* Server.swift */,
+				8C28CC482C5C18AC007F255F /* Client.swift */,
+				8C28CC4E2C5C1BE1007F255F /* System.swift */,
 				8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */,
 				8C2F4AAB2C14BC7700E0DD0A /* Preview Content */,
 			);
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C28CC4F2C5C1BE1007F255F /* System.swift in Sources */,
 				8C2F4AA82C14BC7500E0DD0A /* ContentView.swift in Sources */,
+				8C28CC472C5C1893007F255F /* Server.swift in Sources */,
+				8C28CC492C5C18AC007F255F /* Client.swift in Sources */,
 				8C2F4AA62C14BC7500E0DD0A /* WB_Home1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
