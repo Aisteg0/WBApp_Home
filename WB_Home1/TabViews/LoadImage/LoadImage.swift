@@ -11,11 +11,12 @@ final class Loader: ObservableObject {
     @Published var image: Image?
     
     func loadImage(_ avatar: String) {
-        DispatchQueue.main.async {
+        DispatchQueue.global().async {
             let image = Image(avatar)
-            self.image = image
+            DispatchQueue.main.async {
+                self.image = image
+            }
         }
-        
     }
 }
 
