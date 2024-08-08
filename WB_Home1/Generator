@@ -1,0 +1,7 @@
+
+MODULE="Modules/CatsAPi/Sources/CatsAPi/"
+
+openapi-generator generate -i "json-converter.yaml" -g swift5 -o "catsapi"
+rm -r $MODULE""*
+cp -R "catsapi/OpenAPIClient/Classes/OpenAPIs/". $MODULE
+rm -r "catsapi"
