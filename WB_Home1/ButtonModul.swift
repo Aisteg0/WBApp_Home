@@ -6,15 +6,11 @@
 //
 
 import SwiftUI
-import MyCustomButton
+import UISystem
 
 struct ButtonModul: View {
     @State private var count: Int = 0
     var body: some View {
-        MyCustomButton(title: "Нажми на меня") {
-             count += 1
-        }
-        .padding()
         Text("\(count)")
     }
 }

@@ -4,7 +4,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public struct MyCustomButton: View {
+public struct SaveButtonView: View {
     public var title: String
     public var action: () -> Void
 

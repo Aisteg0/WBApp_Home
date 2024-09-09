@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C2342622C8F1A8A00D430F5 /* Moduls in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2342612C8F1A8A00D430F5 /* Moduls */; };
+		8C2342652C8F1ACE00D430F5 /* Moduls in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2342642C8F1ACE00D430F5 /* Moduls */; };
 		8C28CC402C51AC19007F255F /* MyCustomButton in Frameworks */ = {isa = PBXBuildFile; productRef = 8C28CC3F2C51AC19007F255F /* MyCustomButton */; };
 		8C28CC422C51AD03007F255F /* ButtonModul.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28CC412C51AD03007F255F /* ButtonModul.swift */; };
 		8C2F4AA62C14BC7500E0DD0A /* WB_Home1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C2342672C8F1BA900D430F5 /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISystem; path = ../UISystem; sourceTree = "<group>"; };
 		8C28CC412C51AD03007F255F /* ButtonModul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModul.swift; sourceTree = "<group>"; };
 		8C2F4AA22C14BC7500E0DD0A /* WB_Home1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB_Home1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_Home1App.swift; sourceTree = "<group>"; };
@@ -29,7 +32,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2342622C8F1A8A00D430F5 /* Moduls in Frameworks */,
 				8C28CC402C51AC19007F255F /* MyCustomButton in Frameworks */,
+				8C2342652C8F1ACE00D430F5 /* Moduls in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +44,7 @@
 		8C2F4A992C14BC7500E0DD0A = {
 			isa = PBXGroup;
 			children = (
+				8C2342672C8F1BA900D430F5 /* UISystem */,
 				8C2F4AA42C14BC7500E0DD0A /* WB_Home1 */,
 				8C2F4AA32C14BC7500E0DD0A /* Products */,
 			);
@@ -90,6 +96,8 @@
 			name = WB_Home1;
 			packageProductDependencies = (
 				8C28CC3F2C51AC19007F255F /* MyCustomButton */,
+				8C2342612C8F1A8A00D430F5 /* Moduls */,
+				8C2342642C8F1ACE00D430F5 /* Moduls */,
 			);
 			productName = WB_Home1;
 			productReference = 8C2F4AA22C14BC7500E0DD0A /* WB_Home1.app */;
@@ -120,7 +128,6 @@
 			);
 			mainGroup = 8C2F4A992C14BC7500E0DD0A;
 			packageReferences = (
-				8C28CC3E2C51AC19007F255F /* XCLocalSwiftPackageReference "WB_Home1/MyCustomButton" */,
 			);
 			productRefGroup = 8C2F4AA32C14BC7500E0DD0A /* Products */;
 			projectDirPath = "";
@@ -292,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +329,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,14 +366,15 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		8C28CC3E2C51AC19007F255F /* XCLocalSwiftPackageReference "WB_Home1/MyCustomButton" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = WB_Home1/MyCustomButton;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
+		8C2342612C8F1A8A00D430F5 /* Moduls */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Moduls;
+		};
+		8C2342642C8F1ACE00D430F5 /* Moduls */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Moduls;
+		};
 		8C28CC3F2C51AC19007F255F /* MyCustomButton */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MyCustomButton;
