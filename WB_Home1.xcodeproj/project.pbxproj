@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C23426A2C8F1E9600D430F5 /* UISystem in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2342692C8F1E9600D430F5 /* UISystem */; };
+		8C23426E2C90D16F00D430F5 /* UISystem in Frameworks */ = {isa = PBXBuildFile; productRef = 8C23426D2C90D16F00D430F5 /* UISystem */; };
 		8C28CC422C51AD03007F255F /* ButtonModul.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28CC412C51AD03007F255F /* ButtonModul.swift */; };
 		8C2F4AA62C14BC7500E0DD0A /* WB_Home1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */; };
 		8C2F4AA82C14BC7500E0DD0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */; };
@@ -16,9 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8C2342672C8F1BA900D430F5 /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISystem; path = ../UISystem; sourceTree = "<group>"; };
+		8C23426C2C90D14800D430F5 /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISystem; path = ../UISystem; sourceTree = "<group>"; };
 		8C28CC412C51AD03007F255F /* ButtonModul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModul.swift; sourceTree = "<group>"; };
-		8C2F4AA22C14BC7500E0DD0A /* WB_Home1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB_Home1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2F4AA22C14BC7500E0DD0A /* WB_Home1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WB_Home1.app; path = "/Users/aisteg/Downloads/WB_App/WB_Home1/build/Debug-iphoneos/WB_Home1.app"; sourceTree = "<absolute>"; };
 		8C2F4AA52C14BC7500E0DD0A /* WB_Home1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WB_Home1App.swift; sourceTree = "<group>"; };
 		8C2F4AA72C14BC7500E0DD0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C2F4AA92C14BC7700E0DD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C23426A2C8F1E9600D430F5 /* UISystem in Frameworks */,
+				8C23426E2C90D16F00D430F5 /* UISystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,19 +47,10 @@
 		8C2F4A992C14BC7500E0DD0A = {
 			isa = PBXGroup;
 			children = (
-				8C2342672C8F1BA900D430F5 /* UISystem */,
+				8C23426C2C90D14800D430F5 /* UISystem */,
 				8C2F4AA42C14BC7500E0DD0A /* WB_Home1 */,
-				8C2F4AA32C14BC7500E0DD0A /* Products */,
 				8C2342682C8F1E9600D430F5 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		8C2F4AA32C14BC7500E0DD0A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8C2F4AA22C14BC7500E0DD0A /* WB_Home1.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		8C2F4AA42C14BC7500E0DD0A /* WB_Home1 */ = {
@@ -99,7 +90,7 @@
 			);
 			name = WB_Home1;
 			packageProductDependencies = (
-				8C2342692C8F1E9600D430F5 /* UISystem */,
+				8C23426D2C90D16F00D430F5 /* UISystem */,
 			);
 			productName = WB_Home1;
 			productReference = 8C2F4AA22C14BC7500E0DD0A /* WB_Home1.app */;
@@ -131,7 +122,7 @@
 			mainGroup = 8C2F4A992C14BC7500E0DD0A;
 			packageReferences = (
 			);
-			productRefGroup = 8C2F4AA32C14BC7500E0DD0A /* Products */;
+			productRefGroup = 8C2F4A992C14BC7500E0DD0A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -369,7 +360,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8C2342692C8F1E9600D430F5 /* UISystem */ = {
+		8C23426D2C90D16F00D430F5 /* UISystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UISystem;
 		};
